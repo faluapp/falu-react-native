@@ -1,4 +1,5 @@
 {
+  "name": "falu-react-native",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -8,11 +9,9 @@
   "scripts": {
     "format": "prettier --write \"**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,css,json,yaml,yml}\"",
     "format:check": "prettier --check \"**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,css,json,yaml,yml}\"",
-
     "changeset": "changeset",
     "packages:version": "changeset version",
     "packages:publish": "changeset publish",
-
     "build": "turbo run build",
     "lint": "turbo run lint",
     "test": "turbo run test",
@@ -34,11 +33,12 @@
     "copyfiles": "2.4.1",
     "prettier": "3.2.5",
     "prettier-plugin-organize-imports": "3.2.4",
-    "react": "18.2.0",
-    "react-native": "0.73.6",
     "rimraf": "5.0.5",
     "turbo": "1.13.2",
     "typescript": "5.4.4",
     "vitest": "1.4.0"
+  },
+  "resolutions": {
+    "@types/react": "^18.2.44"
   }
 }

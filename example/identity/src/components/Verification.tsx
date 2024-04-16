@@ -17,7 +17,7 @@ const Verification = ({ optionsTypes }: VerificationProps) => {
     const contract = {
       verification: verification.id,
       temporaryKey: verification.temporary_key,
-      logo: Image.resolveAssetSource({ uri: "https://files.falu.io/v1/public/file_2DW3lX2XRPBWWSIgoCt3OLaclZ0" }),
+      logo: Image.resolveAssetSource({ uri: 'https://files.falu.io/v1/public/file_2DW3lX2XRPBWWSIgoCt3OLaclZ0' }),
     };
 
     const verificationResult = await openIdentityVerificationView(contract);
