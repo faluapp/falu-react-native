@@ -2,8 +2,8 @@ import { openIdentityVerificationView, type IdentityVerificationResult } from '@
 import React, { useState } from 'react';
 import { Button, Image, StyleSheet, Text, View } from 'react-native';
 import { createIdentityVerification } from '../api';
-import { AllowedType, VerificationType, type VerificationOptionTypes, type VerificationOptions } from '../types';
 import logo from '../assets/logo.png';
+import { AllowedType, VerificationType, type VerificationOptionTypes, type VerificationOptions } from '../types';
 
 interface VerificationProps {
   optionsTypes: VerificationOptionTypes;
@@ -22,7 +22,7 @@ const Verification = ({ optionsTypes }: VerificationProps) => {
     };
 
     const verificationResult = await openIdentityVerificationView(contract);
-    setResult(verificationResult)
+    setResult(verificationResult);
   };
 
   const options: VerificationOptions = {

@@ -1,5 +1,5 @@
 const path = require('path');
-const pak = require('../../package.json');
+const pak = require('../../packages/identity/package.json');
 
 module.exports = {
   dependencies: {

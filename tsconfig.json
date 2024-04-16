@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@falu/react-native-identity": ["./src/index"]
+      "@falu/react-native-identity": ["./packages/identity/src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

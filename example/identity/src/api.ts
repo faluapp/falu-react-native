@@ -1,4 +1,4 @@
-import type { VerificationCreateRequest, VerificationOptions, VerificationType } from "./types";
+import type { VerificationCreateRequest, VerificationOptions, VerificationType } from './types';
 
 const endpoint = 'https://identity-verification.hst-smpls.falu.io/identity/create-verification';
 

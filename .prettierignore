@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+package.json
+package-lock.json
+pnpm-lock.yaml
+
+# production
+packages/**/dist
+packages/**/lib
+
+# turbo
+.turbo
+
+# special files
+.vscode/settings.json
+.github/**

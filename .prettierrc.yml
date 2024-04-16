@@ -1,0 +1,6 @@
+# Prettier configuration
+singleQuote: true
+endOfLine: 'auto'
+printWidth: 120
+plugins:
+  - 'prettier-plugin-organize-imports'
