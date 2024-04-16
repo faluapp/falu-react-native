@@ -2,7 +2,6 @@ import { openIdentityVerificationView, type IdentityVerificationResult } from '@
 import React, { useState } from 'react';
 import { Button, Image, StyleSheet, Text, View } from 'react-native';
 import { createIdentityVerification } from '../api';
-import logo from '../assets/logo.png';
 import { AllowedType, VerificationType, type VerificationOptionTypes, type VerificationOptions } from '../types';
 
 interface VerificationProps {
@@ -18,7 +17,7 @@ const Verification = ({ optionsTypes }: VerificationProps) => {
     const contract = {
       verification: verification.id,
       temporaryKey: verification.temporary_key,
-      logo: Image.resolveAssetSource(logo),
+      logo: Image.resolveAssetSource({ uri: "https://files.falu.io/v1/public/file_2DW3lX2XRPBWWSIgoCt3OLaclZ0" }),
     };
 
     const verificationResult = await openIdentityVerificationView(contract);
