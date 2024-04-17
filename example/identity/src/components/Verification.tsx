@@ -1,6 +1,6 @@
 import { openIdentityVerificationView, type IdentityVerificationResult } from '@falu/react-native-identity';
-import React, { useState } from 'react';
-import { Button, Image, StyleSheet, Text, View } from 'react-native';
+import React, { useCallback, useState } from 'react';
+import { ActivityIndicator, Button, Image, StyleSheet, Text, View } from 'react-native';
 import { createIdentityVerification } from '../api';
 import { AllowedType, VerificationType, type VerificationOptionTypes, type VerificationOptions } from '../types';
 
@@ -10,19 +10,36 @@ interface VerificationProps {
 
 const Verification = ({ optionsTypes }: VerificationProps) => {
   const [result, setResult] = useState<IdentityVerificationResult | undefined>();
+  const [loading, setLoading] = useState(false);
 
-  const startVerification = async () => {
+  const verificationContract = async () => {
     const verification = await createIdentityVerification(VerificationType.DOCUMENT, options);
 
-    const contract = {
+    return {
       verification: verification.id,
       temporaryKey: verification.temporary_key,
       logo: Image.resolveAssetSource({ uri: 'https://files.falu.io/v1/public/file_2DW3lX2XRPBWWSIgoCt3OLaclZ0' }),
     };
+  };
 
+  const open = async () => {
+    setLoading(true);
+    const contract = await verificationContract();
+    setLoading(false);
     const verificationResult = await openIdentityVerificationView(contract);
     setResult(verificationResult);
   };
+
+  const startVerification = async () => {
+    open();
+  };
+
+  const loadingButton = useCallback(() => {
+    if (loading) {
+      return <ActivityIndicator />;
+    }
+    return <Button title="Verify Identity" onPress={startVerification} />;
+  }, [loading, startVerification]);
 
   const options: VerificationOptions = {
     allow_uploads: optionsTypes.allowUploads,
@@ -54,7 +71,7 @@ const Verification = ({ optionsTypes }: VerificationProps) => {
 
   return (
     <View style={styles.container}>
-      <Button title="Verify Identity" onPress={startVerification} />
+      <View>{loadingButton()}</View>
       <Text>Result: {result?.type ?? ''}</Text>
     </View>
   );
