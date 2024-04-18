@@ -133,8 +133,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       metro-react-native-babel-preset:
-        specifier: 0.76.5
-        version: 0.76.5(@babel/core@7.24.4)
+        specifier: 0.77.0
+        version: 0.77.0(@babel/core@7.24.4)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -8971,9 +8971,9 @@ packages:
     dependencies:
       terser: 5.30.3
 
-  /metro-react-native-babel-preset@0.76.5(@babel/core@7.24.4):
-    resolution: {integrity: sha512-IlVKeTon5fef77rQ6WreSmrabmbc3dEsLwr/sL80fYjobjsD8FRCnOlbaJdgUf2SMJmSIoawgjh5Yeebv+gJzg==}
-    engines: {node: '>=16'}
+  /metro-react-native-babel-preset@0.77.0(@babel/core@7.24.4):
+    resolution: {integrity: sha512-HPPD+bTxADtoE4y/4t1txgTQ1LVR6imOBy7RMHUsqMVTbekoi8Ph5YI9vKX2VMPtVWeFt0w9YnCSLPa76GcXsA==}
+    engines: {node: '>=18'}
     peerDependencies:
       '@babel/core': '*'
     dependencies:
@@ -9746,7 +9746,7 @@ packages:
       got: 12.6.1
       registry-auth-token: 5.0.2
       registry-url: 6.0.1
-      semver: 7.5.1
+      semver: 7.6.0
     dev: true
 
   /parent-module@1.0.1:
@@ -10749,7 +10749,7 @@ packages:
     resolution: {integrity: sha512-0Ju4+6A8iOnpL/Thra7dZsSlOHYAHIeMxfhWQRI1/VLcT3WDBZKKtQt/QkBOsiIN9ZpuvHE6cGZ0x4glCMmfiA==}
     engines: {node: '>=12'}
     dependencies:
-      semver: 7.5.1
+      semver: 7.6.0
     dev: true
 
   /semver@5.7.2:
@@ -11787,7 +11787,7 @@ packages:
       is-yarn-global: 0.4.1
       latest-version: 7.0.0
       pupa: 3.1.0
-      semver: 7.5.1
+      semver: 7.6.0
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
     dev: true
