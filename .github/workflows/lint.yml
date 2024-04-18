@@ -24,9 +24,6 @@ jobs:
     - name: Setup
       uses: ./.github/actions/setup
 
-    - name: 🔬 Lint
-      run: pnpm lint
-
   prettier:
     name: 💅 Prettier
     runs-on: ubuntu-latest

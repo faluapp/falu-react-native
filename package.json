@@ -17,7 +17,7 @@
     "identity:prepare": "pnpm --filter=@falu/react-native-identity prepare",
 
     "build": "turbo run build",
-    "lint": "turbo run lint",
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "test": "turbo run test",
     "clean": "turbo run clean && rimraf .turbo"
   },
@@ -34,6 +34,8 @@
     "eslint-plugin-react": "7.34.1",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-vitest": "0.4.1",
+    "eslint": "^8.51.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "copyfiles": "2.4.1",
     "prettier": "3.2.5",
     "prettier-plugin-organize-imports": "3.2.4",
@@ -44,5 +46,24 @@
   },
   "resolutions": {
     "@types/react": "^18.2.44"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@react-native",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "quoteProps": "consistent",
+          "singleQuote": true,
+          "tabWidth": 2,
+          "trailingComma": "es5",
+          "useTabs": false
+        }
+      ]
+    }
   }
 }
