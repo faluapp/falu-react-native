@@ -1,31 +1,19 @@
-# falu-identity-react-native
+# Falu React Native
 
-Falu's official react native SDK
+Welcome to the official documentation for Falu's React Native SDK.
 
-## Installation
+Below you'll find explanations of the currently supported Falu Services.
 
-```sh
-npm install falu-identity-react-native
-```
+## List of services
 
-## Usage
+|Name|Languages/Frameworks|
+|--|--|
+|[Identity Verification](#identity-verification)|Android, iOS|
 
-```js
-import { multiply } from 'falu-identity-react-native';
+### Identity verification
 
-// ...
+React Native SDK for identity verification for android.
 
-const result = await multiply(3, 7);
-```
+Available in:
 
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+- [Identity Verification](./packages/identity/README.md)
