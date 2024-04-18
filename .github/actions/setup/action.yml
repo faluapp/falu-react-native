@@ -16,4 +16,5 @@ runs:
         cache: "pnpm"
 
     - name: 📥 Download deps
+      shell: bash
       run: pnpm install
