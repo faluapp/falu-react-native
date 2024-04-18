@@ -1,2 +1,2 @@
-.codespellrc[codespell]
+[codespell]
 skip = .git,pnpm-lock.yaml
