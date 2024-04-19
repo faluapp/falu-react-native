@@ -109,8 +109,8 @@ importers:
         specifier: ^13.6.4
         version: 13.6.4
       '@react-native-community/cli-platform-ios':
-        specifier: ^13.6.4
-        version: 13.6.4
+        specifier: ^13.6.5
+        version: 13.6.5
       '@react-native-community/eslint-config':
         specifier: ^3.2.0
         version: 3.2.0(eslint@8.57.0)(jest@29.7.0)(prettier@3.2.5)(typescript@5.4.4)
@@ -2811,10 +2811,10 @@ packages:
       - encoding
     dev: true
 
-  /@react-native-community/cli-platform-apple@13.6.4:
-    resolution: {integrity: sha512-TLBiotdIz0veLbmvNQIdUv9fkBx7m34ANGYqr5nH7TFxdmey+Z+omoBqG/HGpvyR7d0AY+kZzzV4k+HkYHM/aQ==}
+  /@react-native-community/cli-platform-apple@13.6.5:
+    resolution: {integrity: sha512-cvREoY/ZTqFFPIvBVrlb7oEvMOzaxuBOpUjdTBICv4FeNMVdRe0uupxfGU0ZLpyUrFmXkt0sWgNYud3gww0YYg==}
     dependencies:
-      '@react-native-community/cli-tools': 13.6.4
+      '@react-native-community/cli-tools': 13.6.5
       chalk: 4.1.2
       execa: 5.1.1
       fast-glob: 3.3.2
@@ -2836,10 +2836,10 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-platform-ios@13.6.4:
-    resolution: {integrity: sha512-8Dlva8RY+MY5nhWAj6V7voG3+JOEzDTJmD0FHqL+4p0srvr9v7IEVcxfw5lKBDIUNd0OMAHNevGA+cyz1J60jg==}
+  /@react-native-community/cli-platform-ios@13.6.5:
+    resolution: {integrity: sha512-WPZm6v63ex4nIWKVi46pKSk8wFHUSBxVcnSEc82d6ZQXAxERlDE6VsV+eoo5e4Ri0Ia4cgdAuk7ee7fNX8Dmvw==}
     dependencies:
-      '@react-native-community/cli-platform-apple': 13.6.4
+      '@react-native-community/cli-platform-apple': 13.6.5
     transitivePeerDependencies:
       - encoding
     dev: true
@@ -2883,6 +2883,24 @@ packages:
 
   /@react-native-community/cli-tools@13.6.4:
     resolution: {integrity: sha512-N4oHLLbeTdg8opqJozjClmuTfazo1Mt+oxU7mr7m45VCsFgBqTF70Uwad289TM/3l44PP679NRMAHVYqpIRYtQ==}
+    dependencies:
+      appdirsjs: 1.2.7
+      chalk: 4.1.2
+      execa: 5.1.1
+      find-up: 5.0.0
+      mime: 2.6.0
+      node-fetch: 2.7.0
+      open: 6.4.0
+      ora: 5.4.1
+      semver: 7.6.0
+      shell-quote: 1.8.1
+      sudo-prompt: 9.2.1
+    transitivePeerDependencies:
+      - encoding
+    dev: true
+
+  /@react-native-community/cli-tools@13.6.5:
+    resolution: {integrity: sha512-QVORmK9MLfV4Q+h62TXqDCMvNgPu4Gh2evXnAskoZZPbFTh8+moaY7Uso0bDgnjKJsUJ4PB2LMZZYL4Tq4M3Vg==}
     dependencies:
       appdirsjs: 1.2.7
       chalk: 4.1.2
