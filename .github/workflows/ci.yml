@@ -21,10 +21,6 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      - name: Generate changeset
-        shell: bash
-        run: pnpm changeset
-
       - name: Build Identity Library
         run: pnpm --filter=@falu/react-native-identity prepare
 
