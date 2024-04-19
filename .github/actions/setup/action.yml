@@ -18,7 +18,3 @@ runs:
     - name: 📥 Download deps
       shell: bash
       run: pnpm install
-
-    - name: Generate changeset
-      shell: bash
-      run: pnpm changeset
