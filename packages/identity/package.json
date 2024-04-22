@@ -24,14 +24,17 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/faluapp/falu-react-native",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faluapp/falu-react-native"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/faluapp/falu-react-native/issues"
   },
   "homepage": "https://github.com/faluapp/falu-react-native/blob/main/packages/identity/README.md",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
   "peerDependencies": {
     "react": "*",
@@ -50,5 +53,8 @@
         }
       ]
     ]
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
