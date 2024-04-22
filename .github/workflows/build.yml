@@ -74,9 +74,12 @@ jobs:
             ${{ runner.os }}-gradle-
 
       - name: Build examples for Android
-        run: cd examples/identity && pnpm build:android
+        run: pnpm build:android
         env:
           JAVA_OPTS: '-XX:MaxHeapSize=6g'
+
+      # - name: Build examples for iOS
+      #   run: pnpm build:ios
 
       - name: 📣 Create Release Pull Request or Publish to npm
         if: ${{ github.ref == 'refs/heads/main' }}

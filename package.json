@@ -14,7 +14,8 @@
     "packages:version": "changeset version",
     "packages:publish": "changeset publish",
 
-    "build": "turbo run build",
+    "build:android": "turbo run build:android",
+    "build:ios": "turbo run build:ios",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "clean": "turbo run clean && rimraf .turbo frameworks/android/build frameworks/ios/build"
