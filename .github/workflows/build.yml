@@ -57,7 +57,7 @@ jobs:
       - name: 🧪 Test
         run: pnpm test
 
-      - name: Install JDK
+      - name: Setup JDK
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
