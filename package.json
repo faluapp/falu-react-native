@@ -4,7 +4,7 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "apps/*"
+    "examples/*"
   ],
   "scripts": {
     "format": "prettier --write \"**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,css,json,yaml,yml}\"",
