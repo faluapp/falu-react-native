@@ -9,10 +9,9 @@ updates:
     groups:
       babel:
         patterns:
-          - '@babel*'
-          - 'babel'
+          - '@babel/*'
+          - 'babel*'
           - 'metro-react-native-babel-preset'
-          - 'babel-plugin-module-resolver'
       prettier:
         patterns:
           - 'eslint-config-prettier'
