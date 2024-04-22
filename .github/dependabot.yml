@@ -61,6 +61,9 @@ updates:
       androidx:
         patterns:
           - 'androidx.*'
+      facebook:
+        patterns:
+          - 'com.facebook.flipper:*'
       google:
         patterns:
           - 'com.google.android.gms:*'
