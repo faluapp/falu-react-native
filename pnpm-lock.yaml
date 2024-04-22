@@ -91,8 +91,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/identity
       '@react-native-community/cli-platform-android':
-        specifier: ^13.6.4
-        version: 13.6.4
+        specifier: ^13.6.5
+        version: 13.6.5
       '@react-native-community/cli-platform-ios':
         specifier: ^13.6.5
         version: 13.6.5
@@ -2414,10 +2414,10 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-platform-android@13.6.4:
-    resolution: {integrity: sha512-WhknYwIobKKCqaGCN3BzZEQHTbaZTDiGvcXzevvN867ldfaGdtbH0DVqNunbPoV1RNzeV9qKoQHFdWBkg83tpg==}
+  /@react-native-community/cli-platform-android@13.6.5:
+    resolution: {integrity: sha512-xteTQJUAQbaIErQGcwPBA1uZSvDWUi7MdQVzhIP4gvkUau3HDNOhDHB3iBTf+Xpfjg+Ux4bGctnI8OKGYoEnGw==}
     dependencies:
-      '@react-native-community/cli-tools': 13.6.4
+      '@react-native-community/cli-tools': 13.6.5
       chalk: 4.1.2
       execa: 5.1.1
       fast-glob: 3.3.2
@@ -2496,24 +2496,6 @@ packages:
       sudo-prompt: 9.2.1
     transitivePeerDependencies:
       - encoding
-
-  /@react-native-community/cli-tools@13.6.4:
-    resolution: {integrity: sha512-N4oHLLbeTdg8opqJozjClmuTfazo1Mt+oxU7mr7m45VCsFgBqTF70Uwad289TM/3l44PP679NRMAHVYqpIRYtQ==}
-    dependencies:
-      appdirsjs: 1.2.7
-      chalk: 4.1.2
-      execa: 5.1.1
-      find-up: 5.0.0
-      mime: 2.6.0
-      node-fetch: 2.7.0
-      open: 6.4.0
-      ora: 5.4.1
-      semver: 7.6.0
-      shell-quote: 1.8.1
-      sudo-prompt: 9.2.1
-    transitivePeerDependencies:
-      - encoding
-    dev: true
 
   /@react-native-community/cli-tools@13.6.5:
     resolution: {integrity: sha512-QVORmK9MLfV4Q+h62TXqDCMvNgPu4Gh2evXnAskoZZPbFTh8+moaY7Uso0bDgnjKJsUJ4PB2LMZZYL4Tq4M3Vg==}

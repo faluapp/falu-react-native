@@ -23,7 +23,7 @@
     "@babel/preset-env": "^7.24.4",
     "@babel/runtime": "^7.24.4",
     "@falu/react-native-identity": "workspace:*",
-    "@react-native-community/cli-platform-android": "^13.6.4",
+    "@react-native-community/cli-platform-android": "^13.6.5",
     "@react-native-community/cli-platform-ios": "^13.6.5",
     "@react-native/babel-preset": "0.75.0-main",
     "@react-native/gradle-plugin": "0.75.0-main",
