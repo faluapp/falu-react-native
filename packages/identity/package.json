@@ -13,7 +13,6 @@
     "lib"
   ],
   "scripts": {
-    "example": "yarn workspace falu-react-native-identity-example",
     "prepare": "bob build",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
