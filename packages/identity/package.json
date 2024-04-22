@@ -13,7 +13,6 @@
     "lib"
   ],
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "example": "yarn workspace falu-identity-react-native-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
@@ -84,29 +83,6 @@
       }
     }
   },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "@react-native",
-      "prettier"
-    ],
-    "rules": {
-      "prettier/prettier": [
-        "error",
-        {
-          "quoteProps": "consistent",
-          "singleQuote": true,
-          "tabWidth": 2,
-          "trailingComma": "es5",
-          "useTabs": false
-        }
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "node_modules/",
-    "lib/"
-  ],
   "react-native-builder-bob": {
     "source": "src",
     "output": "lib",

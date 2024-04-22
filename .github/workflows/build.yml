@@ -30,13 +30,10 @@ jobs:
           cache: "pnpm"
 
       - name: Download deps
-        run: pnpm install
+        run: pnpm install # also does prepare
 
-      - name: Prettier check
-        run: pnpm format:check
-
-      - name: Build Identity Library
-        run: pnpm --filter=@falu/react-native-identity prepare
+      - name: Lint
+        run: pnpm lint # also does prettier check
 
       - name: Install JDK
         uses: actions/setup-java@v3

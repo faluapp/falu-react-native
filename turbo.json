@@ -1,5 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.eslintrc.yml", "**/tsconfig*.json"],
   "pipeline": {
     "build:android": {
       "inputs": [
@@ -29,6 +30,11 @@
         "!example/ios/Pods"
       ],
       "outputs": []
+    },
+    "lint": {},
+    "test": {},
+    "clean": {
+      "cache": false
     }
   }
 }

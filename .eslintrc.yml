@@ -1,0 +1,12 @@
+# eslint configuration
+root: true
+extends:
+  - '@react-native'
+  - turbo
+  - prettier
+rules:
+  'prettier/prettier': error
+  'react-hooks/exhaustive-deps': off # TODO: enable this rule
+ignorePatterns:
+  - node_modules/
+  - lib/
