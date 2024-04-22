@@ -57,24 +57,22 @@ jobs:
       - name: 🧪 Test
         run: pnpm test
 
-      - name: Install JDK
+      # Do not use actions/setup-java with the cache: gradle
+      # https://github.com/gradle/actions/tree/main/setup-gradle
+      - name: Setup JDK
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Cache Gradle
-        uses: actions/cache@v4
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
         with:
-          path: |
-            ~/.gradle/wrapper
-            ~/.gradle/caches
-          key: ${{ runner.os }}-gradle-${{ hashFiles('examples/android/gradle/wrapper/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
+          build-root-directory: examples/identity/android
 
       - name: Build examples for Android
-        run: cd examples/identity && pnpm build:android
+        run: pnpm build:android
+        working-directory: examples/identity/android
         env:
           JAVA_OPTS: '-XX:MaxHeapSize=6g'
 
