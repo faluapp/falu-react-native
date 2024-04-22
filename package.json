@@ -14,8 +14,6 @@
     "packages:version": "changeset version",
     "packages:publish": "changeset publish",
 
-    "identity:prepare": "pnpm --filter=@falu/react-native-identity prepare",
-
     "build": "turbo run build",
     "lint": "turbo run lint",
     "test": "turbo run test",
@@ -26,21 +24,23 @@
     "@testing-library/react": "14.2.2",
     "@typescript-eslint/eslint-plugin": "7.7.0",
     "@typescript-eslint/parser": "7.7.0",
+    "@vitejs/plugin-react": "4.2.1",
+    "eslint": "^8.51.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-config-turbo": "1.13.2",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-jsx-a11y": "6.8.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "7.34.1",
     "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-vitest": "0.5.3",
-    "eslint": "^8.51.0",
-    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vitest": "0.4.1",
     "prettier": "3.2.5",
     "prettier-plugin-organize-imports": "3.2.4",
     "rimraf": "5.0.5",
     "turbo": "1.13.2",
     "typescript": "5.4.4",
-    "vitest": "1.5.0"
+    "vitest": "1.4.0",
+    "vitest-react-native": "0.1.5"
   },
   "resolutions": {
     "@types/react": "^18.2.44"

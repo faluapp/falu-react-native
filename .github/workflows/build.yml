@@ -35,6 +35,9 @@ jobs:
       - name: Lint
         run: pnpm lint # also does prettier check
 
+      - name: Test
+        run: pnpm test
+
       - name: Install JDK
         uses: actions/setup-java@v3
         with:
