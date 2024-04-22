@@ -27,6 +27,8 @@ updates:
           - 'react-native*'
           - '@react-native-community/*'
           - '@react-navigation/*'
+        exclude-patterns:
+          - 'react-native-builder-bob'
       react-navigation:
         patterns:
           - '@react-navigation/*'
