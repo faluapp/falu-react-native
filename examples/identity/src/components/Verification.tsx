@@ -62,9 +62,15 @@ const Verification = ({ optionsTypes }: VerificationProps) => {
     }
 
     const allowed: AllowedType[] = [];
-    if (allowDrivingLicense) allowed.push(AllowedType.DRIVING_LICENSE);
-    if (allowPassport) allowed.push(AllowedType.PASSPORT);
-    if (allowIdentityCard) allowed.push(AllowedType.ID_CARD);
+    if (allowDrivingLicense) {
+      allowed.push(AllowedType.DRIVING_LICENSE);
+    }
+    if (allowPassport) {
+      allowed.push(AllowedType.PASSPORT);
+    }
+    if (allowIdentityCard) {
+      allowed.push(AllowedType.ID_CARD);
+    }
 
     return { allowed: allowed };
   }

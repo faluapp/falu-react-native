@@ -14,3 +14,4 @@ packages/**/lib
 # special files
 .vscode/settings.json
 .github/**
+!.github/dependabot.yml

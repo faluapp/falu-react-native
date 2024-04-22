@@ -1,60 +1,63 @@
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: 'npm' # See documentation for possible values
+    directory: '/' # Location of package manifests
     schedule:
-      interval: "weekly"
-      time: "02:00"
+      interval: 'weekly'
+      time: '02:00'
     groups:
-      eslint:
+      babel:
         patterns:
-          - "@typescript-eslint/eslint-plugin"
-          - "@typescript-eslint/parser"
-          - "eslint-plugin-import"
-          - "eslint-plugin-jsx-a11y"
+          - '@babel*'
+          - 'babel'
+          - 'metro-react-native-babel-preset'
+          - 'babel-plugin-module-resolver'
       prettier:
         patterns:
-          - "eslint-config-prettier"
-          - "prettier*"
+          - 'eslint-config-prettier'
+          - 'prettier*'
       react:
         patterns:
-          - "@types/react"
-          - "react"
-          - "eslint-plugin-react"
-          - "eslint-plugin-react-hooks"
+          - '@types/react'
+          - 'react'
       react-native:
-        patterns: ["react-native*"]
+        patterns:
+          - '@react-native/*'
+          - 'react-native*'
+          - '@react-native-community/*'
+          - '@react-navigation/*'
       turbo:
         patterns:
-          - "eslint-config-turbo"
-          - "turbo"
+          - 'eslint-config-turbo'
+          - 'turbo'
       vitest:
         patterns:
           - 'eslint-plugin-vitest'
           - 'vitest'
+          - 'vitest-react-native'
     reviewers:
       - mburumaxwell
       - sethonyango
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: 'github-actions'
     directory: /
     schedule:
-      interval: "weekly"
-      time: "02:00"
+      interval: 'weekly'
+      time: '02:00'
     reviewers:
       - mburumaxwell
       - sethonyango
-  - package-ecosystem: "gradle"
-    directory: "/"
+  - package-ecosystem: 'gradle'
+    directory: '/'
     schedule:
-      interval: "weekly"
+      interval: 'weekly'
     open-pull-requests-limit: 10
     reviewers:
       - sethonyango
     groups:
       androidx:
         patterns:
-          - "androidx.*"
+          - 'androidx.*'
       google:
         patterns:
-          - "com.google.android.gms:*"
-          - "com.google.android.play:*"
+          - 'com.google.android.gms:*'
+          - 'com.google.android.play:*'
