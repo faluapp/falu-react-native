@@ -26,6 +26,9 @@ updates:
           - 'react-native*'
           - '@react-native-community/*'
           - '@react-navigation/*'
+      react-navigation:
+        patterns:
+          - '@react-navigation/*'
       turbo:
         patterns:
           - 'eslint-config-turbo'
@@ -46,8 +49,9 @@ updates:
     reviewers:
       - mburumaxwell
       - sethonyango
+
   - package-ecosystem: 'gradle'
-    directory: '/'
+    directory: '/examples/identity/android'
     schedule:
       interval: 'weekly'
     open-pull-requests-limit: 10
