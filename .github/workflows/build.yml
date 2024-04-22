@@ -3,16 +3,16 @@ name: Build and Deploy
 on:
   push:
     branches:
-    - main
+      - main
     paths-ignore:
-    - README.md
-    - CHANGELOG.md
+      - README.md
+      - CHANGELOG.md
   pull_request:
     branches:
-    - main
+      - main
     paths-ignore:
-    - README.md
-    - CHANGELOG.md
+      - README.md
+      - CHANGELOG.md
   workflow_dispatch:
 
 concurrency:
@@ -25,37 +25,40 @@ jobs:
     name: 🛠️ Build
 
     steps:
-      - name: Checkout repo
+      - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
 
-      - name: Set up pnpm
+      - name: ⎔ Setup pnpm
         uses: pnpm/action-setup@v3
         with:
           version: 8
 
-      - name: Setup node
+      - name: ⎔ Setup node
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: "pnpm"
+          cache: 'pnpm'
 
-      - name: Download deps
+      - name: 📥 Download deps
         run: pnpm install # also does prepare
 
-      - name: Prettier check
+      - name: 💅 Prettier check
         run: pnpm format:check
 
-      - name: Lint
+      # - name: 🛠️ Build
+      #   run: pnpm build
+
+      - name: 🔬 Lint
         run: pnpm lint
 
-      - name: Test
+      - name: 🧪 Test
         run: pnpm test
 
       - name: Install JDK
         uses: actions/setup-java@v4
         with:
-          distribution: "zulu"
-          java-version: "17"
+          distribution: 'zulu'
+          java-version: '17'
 
       - name: Cache Gradle
         uses: actions/cache@v4
@@ -70,7 +73,7 @@ jobs:
       - name: Build examples for Android
         run: cd examples/identity && pnpm build:android
         env:
-          JAVA_OPTS: "-XX:MaxHeapSize=6g"
+          JAVA_OPTS: '-XX:MaxHeapSize=6g'
 
       - name: 📣 Create Release Pull Request or Publish to npm
         if: ${{ github.ref == 'refs/heads/main' }}

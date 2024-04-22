@@ -18,7 +18,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "test": "vitest",
-    "clean": "rimraf .turbo lib ../../frameworks/android/build ../../examples/android/build ../../examples/android/app/build ../../examples/ios/build"
+    "clean": "rimraf .turbo lib"
   },
   "keywords": [
     "react-native",

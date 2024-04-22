@@ -5,6 +5,7 @@ updates:
     schedule:
       interval: 'weekly'
       time: '02:00'
+    open-pull-requests-limit: 10
     groups:
       babel:
         patterns:
@@ -46,6 +47,7 @@ updates:
     schedule:
       interval: 'weekly'
       time: '02:00'
+    open-pull-requests-limit: 10
     reviewers:
       - mburumaxwell
       - sethonyango

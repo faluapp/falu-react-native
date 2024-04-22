@@ -17,7 +17,7 @@
     "build": "turbo run build",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "clean": "turbo run clean && rimraf .turbo"
+    "clean": "turbo run clean && rimraf .turbo frameworks/android/build"
   },
   "devDependencies": {
     "@changesets/cli": "2.27.1",
