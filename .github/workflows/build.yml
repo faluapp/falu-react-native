@@ -28,6 +28,9 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
 
+      - name: Setup turborepo caching
+        uses: dtinth/setup-github-actions-caching-for-turbo@v1
+
       - name: ⎔ Setup pnpm
         uses: pnpm/action-setup@v3
         with:
