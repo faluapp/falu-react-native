@@ -2,9 +2,6 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "rootDir": ".",
-    "paths": {
-      "@falu/react-native-identity": ["./packages/identity/src/index"]
-    },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
