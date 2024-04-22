@@ -1,13 +1,23 @@
 name: Build and Deploy
 
 on:
+  push:
+    branches:
+    - main
+    paths-ignore:
+    - README.md
+    - CHANGELOG.md
   pull_request:
     branches:
     - main
     paths-ignore:
     - README.md
     - CHANGELOG.md
+  workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -61,3 +71,15 @@ jobs:
         run: cd examples/identity && pnpm build:android
         env:
           JAVA_OPTS: "-XX:MaxHeapSize=6g"
+
+      - name: 📣 Create Release Pull Request or Publish to npm
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: changesets/action@v1
+        with:
+          title: 'chore(release): version packages'
+          publish: pnpm packages:publish
+          version: pnpm packages:version
+          commit: 'chore(release): version packages'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
