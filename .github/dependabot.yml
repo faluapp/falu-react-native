@@ -60,13 +60,15 @@ updates:
     reviewers:
       - sethonyango
     groups:
-      androidx:
-        patterns:
-          - 'androidx.*'
-      facebook:
-        patterns:
-          - 'com.facebook.flipper:*'
-      google:
-        patterns:
-          - 'com.google.android.gms:*'
-          - 'com.google.android.play:*'
+      gradle-packages:
+        patterns: ['*']
+  - package-ecosystem: 'swift'
+    directory: '/examples/identity/ios'
+    schedule:
+      interval: 'weekly'
+    open-pull-requests-limit: 10
+    reviewers:
+      - sethonyango
+    groups:
+      swift-packages:
+        patterns: ['*']
