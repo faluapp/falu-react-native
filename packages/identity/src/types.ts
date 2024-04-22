@@ -6,9 +6,7 @@ export type IdentityVerificationContract = {
   logo: ImageResolvedAssetSource;
 };
 
-export type InitializeVerificationView = (
-  contract: IdentityVerificationContract
-) => Promise<void>;
+export type InitializeVerificationView = (contract: IdentityVerificationContract) => Promise<void>;
 
 export type PresentVerificationView = () => Promise<IdentityVerificationResult>;
 
@@ -28,21 +26,14 @@ export class IdentityVerificationResult {
   }
 
   static Succeeded(): IdentityVerificationResult {
-    return new IdentityVerificationResult(
-      IdentityVerificationResultType.Succeeded
-    );
+    return new IdentityVerificationResult(IdentityVerificationResultType.Succeeded);
   }
 
   static Canceled(): IdentityVerificationResult {
-    return new IdentityVerificationResult(
-      IdentityVerificationResultType.Canceled
-    );
+    return new IdentityVerificationResult(IdentityVerificationResultType.Canceled);
   }
 
   static Failed(throwable: any): IdentityVerificationResult {
-    return new IdentityVerificationResult(
-      IdentityVerificationResultType.Failed,
-      throwable
-    );
+    return new IdentityVerificationResult(IdentityVerificationResultType.Failed, throwable);
   }
 }

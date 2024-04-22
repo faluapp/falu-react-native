@@ -1,9 +1,6 @@
 import { useState } from 'react';
 import { openIdentityVerificationView } from '../helpers';
-import type {
-  IdentityVerificationContract,
-  IdentityVerificationResult,
-} from '../types';
+import type { IdentityVerificationContract, IdentityVerificationResult } from '../types';
 
 /**
  * useFaluIdentity hook.
@@ -29,13 +26,9 @@ import type {
  * const { open, result, loading } = useFaluIdentity(fetchOptionsProvider)
  * ```
  */
-export function useFaluIdentity(
-  contractProvider: () => Promise<IdentityVerificationContract>
-) {
+export function useFaluIdentity(contractProvider: () => Promise<IdentityVerificationContract>) {
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<
-    IdentityVerificationResult | undefined
-  >();
+  const [result, setResult] = useState<IdentityVerificationResult | undefined>();
 
   const open = async () => {
     setLoading(true);

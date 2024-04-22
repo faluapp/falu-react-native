@@ -1,11 +1,8 @@
 import FaluIdentityReactNative from './FaluIdentityReactNative';
-import type {
-  IdentityVerificationContract,
-  IdentityVerificationResult,
-} from './types';
+import type { IdentityVerificationContract, IdentityVerificationResult } from './types';
 
 export async function openIdentityVerificationView(
-  contract: IdentityVerificationContract
+  contract: IdentityVerificationContract,
 ): Promise<IdentityVerificationResult> {
   await FaluIdentityReactNative.initialize(contract);
   return await FaluIdentityReactNative.open();

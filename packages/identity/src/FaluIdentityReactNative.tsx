@@ -1,8 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
-import type {
-  InitializeVerificationView,
-  PresentVerificationView,
-} from './types';
+import type { InitializeVerificationView, PresentVerificationView } from './types';
 
 const LINKING_ERROR =
   `The package 'falu-identity-react-native' doesn't seem to be linked. Make sure: \n\n` +
@@ -18,7 +15,7 @@ const FaluIdentityReactNative = NativeModules.FaluIdentityReactNative
         get() {
           throw new Error(LINKING_ERROR);
         },
-      }
+      },
     );
 
 type FaluIdentity = {
