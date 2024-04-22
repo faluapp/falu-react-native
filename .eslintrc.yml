@@ -2,8 +2,9 @@
 root: true
 extends:
   - '@react-native'
-  - plugin:vitest/recommended
   - turbo
+plugins:
+  - vitest
 rules:
   'react-hooks/exhaustive-deps': off # TODO: enable this rule
   vitest/no-disabled-tests: error
