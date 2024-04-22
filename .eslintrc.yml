@@ -4,9 +4,7 @@ extends:
   - '@react-native'
   - plugin:vitest/recommended
   - turbo
-  - prettier
 rules:
-  'prettier/prettier': error
   'react-hooks/exhaustive-deps': off # TODO: enable this rule
   vitest/no-disabled-tests: error
   vitest/no-focused-tests: error

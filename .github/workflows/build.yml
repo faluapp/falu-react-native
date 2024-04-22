@@ -32,8 +32,11 @@ jobs:
       - name: Download deps
         run: pnpm install # also does prepare
 
+      - name: Prettier check
+        run: pnpm format:check
+
       - name: Lint
-        run: pnpm lint # also does prettier check
+        run: pnpm lint
 
       - name: Test
         run: pnpm test
