@@ -17,7 +17,7 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "clean": "rimraf android/build example/android/build example/android/app/build example/ios/build lib",
+    "clean": "rimraf .turbo lib android/build example/android/build example/android/app/build example/ios/build",
     "prepare": "bob build",
     "release": "release-it"
   },
