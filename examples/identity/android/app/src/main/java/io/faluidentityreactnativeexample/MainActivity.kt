@@ -1,4 +1,4 @@
-package com.faluidentityreactnativeexample
+package io.faluidentityreactnativeexample
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

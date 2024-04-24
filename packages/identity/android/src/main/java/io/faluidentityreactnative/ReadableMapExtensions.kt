@@ -1,4 +1,4 @@
-package com.faluidentityreactnative
+package io.faluidentityreactnative
 
 import android.os.Bundle
 import android.util.Log

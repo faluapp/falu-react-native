@@ -1,4 +1,4 @@
-package com.faluidentityreactnative
+package io.faluidentityreactnative
 
 import FaluIdentityReactNativeFragment
 import android.app.Activity

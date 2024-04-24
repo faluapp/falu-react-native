@@ -1,4 +1,4 @@
-package com.faluidentityreactnativeexample
+package io.faluidentityreactnativeexample
 
 import android.app.Application
 import com.facebook.react.PackageList
