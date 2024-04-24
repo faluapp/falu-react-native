@@ -63,8 +63,28 @@ updates:
     groups:
       gradle-packages:
         patterns: ['*']
+  - package-ecosystem: 'gradle'
+    directory: '/packages/identity/android'
+    schedule:
+      interval: 'weekly'
+    open-pull-requests-limit: 10
+    reviewers:
+      - sethonyango
+    groups:
+      gradle-packages:
+        patterns: ['*']
   - package-ecosystem: 'swift'
     directory: '/examples/identity/ios'
+    schedule:
+      interval: 'weekly'
+    open-pull-requests-limit: 10
+    reviewers:
+      - sethonyango
+    groups:
+      swift-packages:
+        patterns: ['*']
+  - package-ecosystem: 'swift'
+    directory: '/packages/identity/ios'
     schedule:
       interval: 'weekly'
     open-pull-requests-limit: 10
