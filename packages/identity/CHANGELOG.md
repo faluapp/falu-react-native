@@ -1,5 +1,11 @@
 # @falu/react-native-identity
 
+## 0.2.0
+
+### Minor Changes
+
+- eaad0e6: Change package name from "com.falu..." to "io.falu..."
+
 ## 0.1.1
 
 ### Patch Changes
