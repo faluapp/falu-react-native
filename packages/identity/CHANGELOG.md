@@ -1,5 +1,11 @@
 # @falu/react-native-identity
 
+## 0.2.1
+
+### Patch Changes
+
+- 226de92: Remove unused imports from android native bridge
+
 ## 0.2.0
 
 ### Minor Changes
