@@ -1,9 +1,7 @@
 package io.faluidentityreactnative
 
-import FaluIdentityReactNativeFragment
 import android.app.Activity
 import android.content.Intent
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactApplicationContext
