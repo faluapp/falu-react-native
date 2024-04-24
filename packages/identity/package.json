@@ -1,6 +1,6 @@
 {
   "name": "@falu/react-native-identity",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Falu react native SDK for identity",
   "author": "Falu <support@falu.io> (https://falu.io/)",
   "main": "lib/commonjs/index",
