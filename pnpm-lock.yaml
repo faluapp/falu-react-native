@@ -15,8 +15,8 @@ importers:
         specifier: 3.2.0
         version: 3.2.0(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
       '@react-native/eslint-config':
-        specifier: 0.75.0-main
-        version: 0.75.0-main(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
+        specifier: 0.74.81
+        version: 0.74.81(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
       '@types/react':
         specifier: 18.2.79
         version: 18.2.79
@@ -94,17 +94,17 @@ importers:
         specifier: 13.6.5
         version: 13.6.5
       '@react-native/babel-preset':
-        specifier: 0.75.0-main
-        version: 0.75.0-main(@babel/core@7.24.4)(@babel/preset-env@7.24.4)
+        specifier: 0.74.81
+        version: 0.74.81(@babel/core@7.24.4)(@babel/preset-env@7.24.4)
       '@react-native/gradle-plugin':
-        specifier: 0.75.0-main
-        version: 0.75.0-main
+        specifier: 0.74.81
+        version: 0.74.81
       '@react-native/metro-config':
-        specifier: 0.75.0-main
-        version: 0.75.0-main(@babel/core@7.24.4)(@babel/preset-env@7.24.4)
+        specifier: 0.74.81
+        version: 0.74.81(@babel/core@7.24.4)(@babel/preset-env@7.24.4)
       '@react-native/typescript-config':
-        specifier: 0.75.0-main
-        version: 0.75.0-main
+        specifier: 0.74.81
+        version: 0.74.81
       babel-plugin-module-resolver:
         specifier: 5.0.2
         version: 5.0.2
@@ -2586,11 +2586,11 @@ packages:
       - '@babel/preset-env'
       - supports-color
 
-  /@react-native/babel-plugin-codegen@0.75.0-main(@babel/preset-env@7.24.4):
-    resolution: {integrity: sha512-gEl+bl+orntqNA3yGETGeHLNzDnZuQfO074BreX/l80WnZbx00/BJ57IkZ372j6I+gjki+3dYeRQOp82m/sUWQ==}
+  /@react-native/babel-plugin-codegen@0.74.81(@babel/preset-env@7.24.4):
+    resolution: {integrity: sha512-Bj6g5/xkLMBAdC6665TbD3uCKCQSmLQpGv3gyqya/ydZpv3dDmDXfkGmO4fqTwEMunzu09Sk55st2ipmuXAaAg==}
     engines: {node: '>=18'}
     dependencies:
-      '@react-native/codegen': 0.75.0-main(@babel/preset-env@7.24.4)
+      '@react-native/codegen': 0.74.81(@babel/preset-env@7.24.4)
     transitivePeerDependencies:
       - '@babel/preset-env'
       - supports-color
@@ -2648,8 +2648,8 @@ packages:
       - '@babel/preset-env'
       - supports-color
 
-  /@react-native/babel-preset@0.75.0-main(@babel/core@7.24.4)(@babel/preset-env@7.24.4):
-    resolution: {integrity: sha512-yTyft0jSbTEfTfDUUfllJqKWLl3rNMiVMFjuWzMigikKAlSwKKUC/DxTEUfMwekFU05TjDyEOtigOTrm2yuoRQ==}
+  /@react-native/babel-preset@0.74.81(@babel/core@7.24.4)(@babel/preset-env@7.24.4):
+    resolution: {integrity: sha512-H80B3Y3lBBVC4x9tceTEQq/04lx01gW6ajWCcVbd7sHvGEAxfMFEZUmVZr0451Cafn02wVnDJ8psto1F+0w5lw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@babel/core': '*'
@@ -2694,7 +2694,7 @@ packages:
       '@babel/plugin-transform-typescript': 7.24.4(@babel/core@7.24.4)
       '@babel/plugin-transform-unicode-regex': 7.24.1(@babel/core@7.24.4)
       '@babel/template': 7.24.0
-      '@react-native/babel-plugin-codegen': 0.75.0-main(@babel/preset-env@7.24.4)
+      '@react-native/babel-plugin-codegen': 0.74.81(@babel/preset-env@7.24.4)
       babel-plugin-transform-flow-enums: 0.0.2(@babel/core@7.24.4)
       react-refresh: 0.14.0
     transitivePeerDependencies:
@@ -2719,8 +2719,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@react-native/codegen@0.75.0-main(@babel/preset-env@7.24.4):
-    resolution: {integrity: sha512-vcIu7x7o/3xn9UQdOPqA6B/jtxDHB+xTIDlVe7nym+0ua/OIOwYoVscTb0NtHuEjGKO1G5CTWNhl34BFhIs0+g==}
+  /@react-native/codegen@0.74.81(@babel/preset-env@7.24.4):
+    resolution: {integrity: sha512-hhXo4ccv2lYWaJrZDsdbRTZ5SzSOdyZ0MY6YXwf3xEFLuSunbUMu17Rz5LXemKXlpVx4KEgJ/TDc2pPVaRPZgA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@babel/preset-env': ^7.1.6
@@ -2728,7 +2728,7 @@ packages:
       '@babel/parser': 7.24.4
       '@babel/preset-env': 7.24.4(@babel/core@7.24.4)
       glob: 7.2.3
-      hermes-parser: 0.20.1
+      hermes-parser: 0.19.1
       invariant: 2.2.4
       jscodeshift: 0.14.0(@babel/preset-env@7.24.4)
       mkdirp: 0.5.6
@@ -2785,8 +2785,8 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /@react-native/eslint-config@0.75.0-main(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5):
-    resolution: {integrity: sha512-KnWKsCRe4lg9LWbAOZeB2sJTs+p4ulXptS8tuIsoi6B+hQcx7VjR2sGj95PDVXTpa7Ut1F6H4tByPddaH+4t0Q==}
+  /@react-native/eslint-config@0.74.81(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5):
+    resolution: {integrity: sha512-XIBjvKxNJYzON6dInZcpuVDRNGC4QYXtwFu6KUVpnPbWVmOSP1PzUVy8R+y0Vh2FOpYnKmoCLlMU1V4evnZmpw==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: '>=8'
@@ -2794,7 +2794,7 @@ packages:
     dependencies:
       '@babel/core': 7.24.4
       '@babel/eslint-parser': 7.24.1(@babel/core@7.24.4)(eslint@8.57.0)
-      '@react-native/eslint-plugin': 0.75.0-main
+      '@react-native/eslint-plugin': 0.74.81
       '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.4.5)
       '@typescript-eslint/parser': 6.21.0(eslint@8.57.0)(typescript@5.4.5)
       eslint: 8.57.0
@@ -2813,8 +2813,8 @@ packages:
       - typescript
     dev: true
 
-  /@react-native/eslint-plugin@0.75.0-main:
-    resolution: {integrity: sha512-r5JICIq8TCPMkbbJwAgOdE4wIAsELQX+NhaPfB6LMvxCYwsGc41UZG8ZAoCnaCLVtHA/p9xtmJNMVAODiArASA==}
+  /@react-native/eslint-plugin@0.74.81:
+    resolution: {integrity: sha512-vlbLJ38MFJzcEgNxNswjgDRELvZX5e4SmGhtN9N1ZQpXLkgo3hs+l2m4ulSpKhSmqpbacB5XbuTTMgKOsLj/5w==}
     engines: {node: '>=18'}
     dev: true
 
@@ -2822,8 +2822,8 @@ packages:
     resolution: {integrity: sha512-PMDnbsZa+tD55Ug+W8CfqXiGoGneSSyrBZCMb5JfiB3AFST3Uj5e6lw8SgI/B6SKZF7lG0BhZ6YHZsRZ5MlXmg==}
     engines: {node: '>=18'}
 
-  /@react-native/gradle-plugin@0.75.0-main:
-    resolution: {integrity: sha512-79inkmCkz9ftDBQbu1n5QZyg5axPJwV4qLBSEBEAOe+kH+Uq4/v4liDC+3Oc/JFkq7vcgrqX8TQCbgb1BHFDbw==}
+  /@react-native/gradle-plugin@0.74.81:
+    resolution: {integrity: sha512-7YQ4TLnqfe2kplWWzBWO6k0rPSrWEbuEiRXSJNZQCtCk+t2YX985G62p/9jWm3sGLN4UTcpDXaFNTTPBvlycoQ==}
     engines: {node: '>=18'}
     dev: true
 
@@ -2831,8 +2831,8 @@ packages:
     resolution: {integrity: sha512-ewMwGcumrilnF87H4jjrnvGZEaPFCAC4ebraEK+CurDDmwST/bIicI4hrOAv+0Z0F7DEK4O4H7r8q9vH7IbN4g==}
     engines: {node: '>=18'}
 
-  /@react-native/js-polyfills@0.75.0-main:
-    resolution: {integrity: sha512-wwhetlYfuqG2yR3pNV4SGBMBbi13Zt5fOaTXdZzTtRfzAyw91DpO3LEFh6tPhXbuQZyuWGHAkh3xlq0aNqJHQQ==}
+  /@react-native/js-polyfills@0.74.81:
+    resolution: {integrity: sha512-o4MiR+/kkHoeoQ/zPwt81LnTm6pqdg0wOhU7S7vIZUqzJ7YUpnpaAvF+/z7HzUOPudnavoCN0wvcZPe/AMEyCA==}
     engines: {node: '>=18'}
     dev: true
 
@@ -2850,27 +2850,27 @@ packages:
       - '@babel/preset-env'
       - supports-color
 
-  /@react-native/metro-babel-transformer@0.75.0-main(@babel/core@7.24.4)(@babel/preset-env@7.24.4):
-    resolution: {integrity: sha512-5rUczDT5Tg/oIxCcO1eTJwmLNb7CA9cNSqFtQ9wE8kPjFz9LsgqKynOpV/sENnPaPYhoZtkSL2Mb/kPKbdXY4w==}
+  /@react-native/metro-babel-transformer@0.74.81(@babel/core@7.24.4)(@babel/preset-env@7.24.4):
+    resolution: {integrity: sha512-PVcMjj23poAK6Uemflz4MIJdEpONpjqF7JASNqqQkY6wfDdaIiZSNk8EBCWKb0t7nKqhMvtTq11DMzYJ0JFITg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@babel/core': '*'
     dependencies:
       '@babel/core': 7.24.4
-      '@react-native/babel-preset': 0.75.0-main(@babel/core@7.24.4)(@babel/preset-env@7.24.4)
-      hermes-parser: 0.20.1
+      '@react-native/babel-preset': 0.74.81(@babel/core@7.24.4)(@babel/preset-env@7.24.4)
+      hermes-parser: 0.19.1
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - '@babel/preset-env'
       - supports-color
     dev: true
 
-  /@react-native/metro-config@0.75.0-main(@babel/core@7.24.4)(@babel/preset-env@7.24.4):
-    resolution: {integrity: sha512-RxgYVzQBDKEeiiLFtWeLntmumbDfqM4XDPShnId813Nq/v9cP5FlGiBMLUxInHn/lrP9NCFP6eYg/XpbGGkvHQ==}
+  /@react-native/metro-config@0.74.81(@babel/core@7.24.4)(@babel/preset-env@7.24.4):
+    resolution: {integrity: sha512-VInZ60cXC/e5MY7kMlrMRn6Mhpj05hJfiJngRKy8BsWnXJNQMv3iggar+XnfSh98saLw1yG96dO3G6s2WQhzOg==}
     engines: {node: '>=18'}
     dependencies:
-      '@react-native/js-polyfills': 0.75.0-main
-      '@react-native/metro-babel-transformer': 0.75.0-main(@babel/core@7.24.4)(@babel/preset-env@7.24.4)
+      '@react-native/js-polyfills': 0.74.81
+      '@react-native/metro-babel-transformer': 0.74.81(@babel/core@7.24.4)(@babel/preset-env@7.24.4)
       metro-config: 0.80.8
       metro-runtime: 0.80.8
     transitivePeerDependencies:
@@ -2889,8 +2889,8 @@ packages:
     resolution: {integrity: sha512-K0aGNn1TjalKj+65D7ycc1//H9roAQ51GJVk5ZJQFb2teECGmzd86bYDC0aYdbRf7gtovescq4Zt6FR0tgXiHQ==}
     dev: true
 
-  /@react-native/typescript-config@0.75.0-main:
-    resolution: {integrity: sha512-pA2EZlfr1uD20HSbQVfmc/8ALED29q/3oohBGR+s74jjCJg5u76bsD9EsV0p6CR48u2//cjIyx0MvN8BAsPX1A==}
+  /@react-native/typescript-config@0.74.81:
+    resolution: {integrity: sha512-jk4LJUKdRYmXxxpebRSW8mK9xJPW90W6BE1IE9LdFi0exdsnVv5gXM9QylG+9kDVZj3bltMuMVdijWnU7SRNbg==}
     dev: true
 
   /@react-native/virtualized-lists@0.73.4(react-native@0.73.6):
@@ -5536,6 +5536,10 @@ packages:
   /hermes-estree@0.15.0:
     resolution: {integrity: sha512-lLYvAd+6BnOqWdnNbP/Q8xfl8LOGw4wVjfrNd9Gt8eoFzhNBRVD95n4l2ksfMVOoxuVyegs85g83KS9QOsxbVQ==}
 
+  /hermes-estree@0.19.1:
+    resolution: {integrity: sha512-daLGV3Q2MKk8w4evNMKwS8zBE/rcpA800nu1Q5kM08IKijoSnPe9Uo1iIxzPKRkn95IxxsgBMPeYHt3VG4ej2g==}
+    dev: true
+
   /hermes-estree@0.20.1:
     resolution: {integrity: sha512-SQpZK4BzR48kuOg0v4pb3EAGNclzIlqMj3Opu/mu7bbAoFw6oig6cEt/RAi0zTFW/iW6Iz9X9ggGuZTAZ/yZHg==}
 
@@ -5543,6 +5547,12 @@ packages:
     resolution: {integrity: sha512-Q1uks5rjZlE9RjMMjSUCkGrEIPI5pKJILeCtK1VmTj7U4pf3wVPoo+cxfu+s4cBAPy2JzikIIdCZgBoR6x7U1Q==}
     dependencies:
       hermes-estree: 0.15.0
+
+  /hermes-parser@0.19.1:
+    resolution: {integrity: sha512-Vp+bXzxYJWrpEuJ/vXxUsLnt0+y4q9zyi4zUlkLqD8FKv4LjIfOvP69R/9Lty3dCyKh0E2BU7Eypqr63/rKT/A==}
+    dependencies:
+      hermes-estree: 0.19.1
+    dev: true
 
   /hermes-parser@0.20.1:
     resolution: {integrity: sha512-BL5P83cwCogI8D7rrDCgsFY0tdYUtmFP9XaXtl2IQjC+2Xo+4okjfXintlTxcIwl4qeGddEl28Z11kbVIw0aNA==}
