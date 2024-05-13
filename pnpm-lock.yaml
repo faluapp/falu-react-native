@@ -18,8 +18,8 @@ importers:
         specifier: 0.74.83
         version: 0.74.83(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
       '@types/react':
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: 18.3.2
+        version: 18.3.2
       '@vitejs/plugin-react':
         specifier: 4.2.1
         version: 4.2.1(vite@5.2.11)
@@ -116,7 +116,7 @@ importers:
         version: 18.3.1
       react-native:
         specifier: 0.74.1
-        version: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.1)(react@18.3.1)
+        version: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.2)(react@18.3.1)
 
   packages/identity:
     dependencies:
@@ -3168,7 +3168,7 @@ packages:
       react-native: 0.73.6(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(react@18.2.0)
     dev: false
 
-  /@react-native/virtualized-lists@0.74.83(@types/react@18.3.1)(react-native@0.74.1)(react@18.3.1):
+  /@react-native/virtualized-lists@0.74.83(@types/react@18.3.2)(react-native@0.74.1)(react@18.3.1):
     resolution: {integrity: sha512-rmaLeE34rj7py4FxTod7iMTC7BAsm+HrGA8WxYmEJeyTV7WSaxAkosKoYBz8038mOiwnG9VwA/7FrB6bEQvn1A==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -3179,11 +3179,11 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.3.1
+      '@types/react': 18.3.2
       invariant: 2.2.4
       nullthrows: 1.1.1
       react: 18.3.1
-      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.1)(react@18.3.1)
+      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.2)(react@18.3.1)
 
   /@react-navigation/core@6.4.16(react@18.3.1):
     resolution: {integrity: sha512-UDTJBsHxnzgFETR3ZxhctP+RWr4SkyeZpbhpkQoIGOuwSCkt1SE0qjU48/u6r6w6XlX8OqVudn1Ab0QFXTHxuQ==}
@@ -3209,7 +3209,7 @@ packages:
     dependencies:
       '@react-navigation/native': 6.1.17(react-native@0.74.1)(react@18.3.1)
       react: 18.3.1
-      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.1)(react@18.3.1)
+      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.2)(react@18.3.1)
       react-native-safe-area-context: 4.10.1(react-native@0.74.1)(react@18.3.1)
     dev: false
 
@@ -3225,7 +3225,7 @@ packages:
       '@react-navigation/elements': 1.3.30(@react-navigation/native@6.1.17)(react-native-safe-area-context@4.10.1)(react-native@0.74.1)(react@18.3.1)
       '@react-navigation/native': 6.1.17(react-native@0.74.1)(react@18.3.1)
       react: 18.3.1
-      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.1)(react@18.3.1)
+      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.2)(react@18.3.1)
       react-native-safe-area-context: 4.10.1(react-native@0.74.1)(react@18.3.1)
       react-native-screens: 3.31.1(react-native@0.74.1)(react@18.3.1)
       warn-once: 0.1.1
@@ -3242,7 +3242,7 @@ packages:
       fast-deep-equal: 3.1.3
       nanoid: 3.3.7
       react: 18.3.1
-      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.1)(react@18.3.1)
+      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.2)(react@18.3.1)
     dev: false
 
   /@react-navigation/routers@6.1.9:
@@ -3500,8 +3500,8 @@ packages:
   /@types/prop-types@15.7.12:
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
 
-  /@types/react@18.3.1:
-    resolution: {integrity: sha512-V0kuGBX3+prX+DQ/7r2qsv1NsdfnCLnTgnRJ1pYnxykBhGMz+qj+box5lq7XsO5mtZsBqpjwwTu/7wszPfMBcw==}
+  /@types/react@18.3.2:
+    resolution: {integrity: sha512-Btgg89dAnqD4vV7R3hlwOxgqobUQKgx3MmrQRi0yYbs/P0ym8XozIAlkqVilPqHQwXs4e9Tf63rrCgl58BcO4w==}
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
@@ -7754,7 +7754,7 @@ packages:
       react-native: '*'
     dependencies:
       react: 18.3.1
-      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.1)(react@18.3.1)
+      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.2)(react@18.3.1)
     dev: false
 
   /react-native-screens@3.31.1(react-native@0.74.1)(react@18.3.1):
@@ -7765,7 +7765,7 @@ packages:
     dependencies:
       react: 18.3.1
       react-freeze: 1.0.4(react@18.3.1)
-      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.1)(react@18.3.1)
+      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.2)(react@18.3.1)
       warn-once: 0.1.1
     dev: false
 
@@ -7824,7 +7824,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.1)(react@18.3.1):
+  /react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.2)(react@18.3.1):
     resolution: {integrity: sha512-0H2XpmghwOtfPpM2LKqHIN7gxy+7G/r1hwJHKLV6uoyXGC/gCojRtoo5NqyKrWpFC8cqyT6wTYCLuG7CxEKilg==}
     engines: {node: '>=18'}
     hasBin: true
@@ -7845,8 +7845,8 @@ packages:
       '@react-native/gradle-plugin': 0.74.83
       '@react-native/js-polyfills': 0.74.83
       '@react-native/normalize-colors': 0.74.83
-      '@react-native/virtualized-lists': 0.74.83(@types/react@18.3.1)(react-native@0.74.1)(react@18.3.1)
-      '@types/react': 18.3.1
+      '@react-native/virtualized-lists': 0.74.83(@types/react@18.3.2)(react-native@0.74.1)(react@18.3.1)
+      '@types/react': 18.3.2
       abort-controller: 3.0.0
       anser: 1.4.10
       ansi-regex: 5.0.1
@@ -9063,7 +9063,7 @@ packages:
       flow-remove-types: 2.234.0
       pirates: 4.0.6
       react: 18.3.1
-      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.1)(react@18.3.1)
+      react-native: 0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@types/react@18.3.2)(react@18.3.1)
       regenerator-runtime: 0.13.11
       vite: 5.2.11
     dev: true
