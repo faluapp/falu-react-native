@@ -24,7 +24,7 @@
     "@changesets/cli": "2.27.3",
     "@react-native-community/eslint-config": "3.2.0",
     "@react-native/eslint-config": "0.74.83",
-    "@types/react": "18.3.2",
+    "@types/react": "18.3.3",
     "@vitejs/plugin-react": "4.3.0",
     "eslint-config-turbo": "1.13.3",
     "eslint-plugin-prettier": "5.1.3",
