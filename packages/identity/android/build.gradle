@@ -90,6 +90,6 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:0.20.1"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  implementation "io.falu:falu-identity:2.6.9"
+  implementation "io.falu:falu-identity:2.7.0"
 }
 
