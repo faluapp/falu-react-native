@@ -9,11 +9,9 @@
   "scripts": {
     "format": "prettier --write \"**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,css,json,yaml,yml}\"",
     "format:check": "prettier --check \"**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,css,json,yaml,yml}\"",
-
     "changeset": "changeset",
     "packages:version": "changeset version",
     "packages:publish": "changeset publish",
-
     "build:android": "turbo run build:android",
     "build:ios": "turbo run build:ios",
     "lint": "turbo run lint",
@@ -40,5 +38,6 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "packageManager": "^pnpm@9.2.0"
 }
