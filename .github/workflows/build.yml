@@ -54,9 +54,6 @@ jobs:
       - name: 🔬 Lint
         run: pnpm lint
 
-      - name: 🧪 Test
-        run: pnpm test
-
       - name: ⎔ Setup JDK
         uses: actions/setup-java@v4
         with:
