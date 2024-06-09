@@ -58,7 +58,10 @@
     "preset": "react-native",
     "modulePathIgnorePatterns": [
       "<rootDir>/examples/identity/node_modules",
-      "<rootDir>/packages/identity/lib/"
+      "<rootDir>/packages/identity/lib"
+    ],
+    "testPathIgnorePatterns": [
+      "\\.d\\.ts$"
     ]
   },
   "react-native-builder-bob": {
