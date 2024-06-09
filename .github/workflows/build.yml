@@ -56,7 +56,7 @@ jobs:
 
       - name: 🧪 Test
         run: pnpm test
-      
+
       - name: ⎔ Setup JDK
         uses: actions/setup-java@v4
         with:
