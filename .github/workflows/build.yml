@@ -61,6 +61,9 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v2
+
       - name: 🗄️ Cache Gradle
         uses: actions/cache@v4
         with:
@@ -71,6 +74,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
           save-always: true
+
+      - name: Set SDK path
+        run: cd examples/identity && echo "sdk.dir=$ANDROID_HOME" >> android/local.properties
 
       - name: 🛠️ Build examples for Android
         run: pnpm build:android
