@@ -24,7 +24,7 @@
     "@changesets/cli": "2.27.5",
     "@jest/globals": "^29.7.0",
     "@react-native-community/eslint-config": "3.2.0",
-    "@react-native/eslint-config": "0.74.83",
+    "@react-native/eslint-config": "0.74.84",
     "@types/jest": "^29.5.5",
     "@types/react": "18.3.3",
     "eslint-config-turbo": "1.13.3",
