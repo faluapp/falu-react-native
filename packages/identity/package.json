@@ -30,7 +30,7 @@
     "prepare": "bob build",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "test": "vitest",
+    "test": "jest",
     "clean": "rimraf .turbo lib"
   },
   "keywords": [
@@ -53,6 +53,16 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
+  },
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/examples/identity/node_modules",
+      "<rootDir>/packages/identity/lib"
+    ],
+    "testPathIgnorePatterns": [
+      "\\.d\\.ts$"
+    ]
   },
   "react-native-builder-bob": {
     "source": "src",

@@ -3,12 +3,8 @@ root: true
 extends:
   - '@react-native'
   - turbo
-plugins:
-  - vitest
 rules:
   'react-hooks/exhaustive-deps': off # TODO: enable this rule
-  vitest/no-disabled-tests: error
-  vitest/no-focused-tests: error
 ignorePatterns:
   - node_modules/
   - lib/
