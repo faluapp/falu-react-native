@@ -57,6 +57,7 @@ updates:
     directory: '/examples/identity/android'
     schedule:
       interval: 'weekly'
+      time: '02:00'
     open-pull-requests-limit: 10
     reviewers:
       - sethonyango
@@ -67,6 +68,7 @@ updates:
     directory: '/packages/identity/android'
     schedule:
       interval: 'weekly'
+      time: '02:00'
     open-pull-requests-limit: 10
     reviewers:
       - sethonyango
@@ -77,6 +79,7 @@ updates:
     directory: '/examples/identity/ios'
     schedule:
       interval: 'weekly'
+      time: '02:00'
     open-pull-requests-limit: 10
     reviewers:
       - sethonyango
@@ -87,6 +90,7 @@ updates:
     directory: '/packages/identity/ios'
     schedule:
       interval: 'weekly'
+      time: '02:00'
     open-pull-requests-limit: 10
     reviewers:
       - sethonyango
