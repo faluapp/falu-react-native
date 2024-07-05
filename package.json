@@ -21,7 +21,7 @@
     "clean": "turbo run clean && rimraf .turbo frameworks/android/build frameworks/ios/build"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.6",
+    "@changesets/cli": "2.27.7",
     "@jest/globals": "^29.7.0",
     "@react-native-community/eslint-config": "3.2.0",
     "@react-native/eslint-config": "0.74.85",
