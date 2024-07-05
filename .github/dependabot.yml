@@ -54,7 +54,9 @@ updates:
       - sethonyango
 
   - package-ecosystem: 'gradle'
-    directory: '/examples/identity/android'
+    directories:
+      - '/examples/identity/android'
+      - '/packages/identity/android'
     schedule:
       interval: 'weekly'
       time: '02:00'
@@ -62,38 +64,16 @@ updates:
     reviewers:
       - sethonyango
     groups:
-      gradle-packages:
-        patterns: ['*']
-  - package-ecosystem: 'gradle'
-    directory: '/packages/identity/android'
-    schedule:
-      interval: 'weekly'
-      time: '02:00'
-    open-pull-requests-limit: 10
-    reviewers:
-      - sethonyango
-    groups:
-      gradle-packages:
-        patterns: ['*']
+      react-native:
+        patterns:
+          - 'com.facebook.react:*'
   - package-ecosystem: 'swift'
-    directory: '/examples/identity/ios'
+    directories:
+      - '/examples/identity/ios'
+      - '/packages/identity/ios'
     schedule:
       interval: 'weekly'
       time: '02:00'
     open-pull-requests-limit: 10
     reviewers:
       - sethonyango
-    groups:
-      swift-packages:
-        patterns: ['*']
-  - package-ecosystem: 'swift'
-    directory: '/packages/identity/ios'
-    schedule:
-      interval: 'weekly'
-      time: '02:00'
-    open-pull-requests-limit: 10
-    reviewers:
-      - sethonyango
-    groups:
-      swift-packages:
-        patterns: ['*']
