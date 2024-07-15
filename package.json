@@ -33,7 +33,7 @@
     "prettier": "3.3.2",
     "prettier-plugin-organize-imports": "4.0.0",
     "react-native-builder-bob": "0.20.0",
-    "rimraf": "5.0.8",
+    "rimraf": "6.0.1",
     "ts-jest": "^29.1.5",
     "turbo": "2.0.6",
     "typescript": "5.5.3"
