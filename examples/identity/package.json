@@ -19,9 +19,9 @@
     "react-native-screens": "3.32.0"
   },
   "devDependencies": {
-    "@babel/core": "7.24.7",
-    "@babel/preset-env": "7.24.7",
-    "@babel/runtime": "7.24.7",
+    "@babel/core": "7.24.8",
+    "@babel/preset-env": "7.24.8",
+    "@babel/runtime": "7.24.8",
     "@falu/react-native-identity": "workspace:*",
     "@react-native-community/cli-platform-android": "13.6.9",
     "@react-native-community/cli-platform-ios": "13.6.9",
