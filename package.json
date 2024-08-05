@@ -27,7 +27,7 @@
     "@react-native/eslint-config": "0.74.85",
     "@types/jest": "^29.5.5",
     "@types/react": "18.3.3",
-    "eslint-config-turbo": "2.0.9",
+    "eslint-config-turbo": "2.0.11",
     "eslint-plugin-prettier": "5.2.1",
     "jest": "^29.7.0",
     "prettier": "3.3.3",
@@ -35,7 +35,7 @@
     "react-native-builder-bob": "0.28.1",
     "rimraf": "6.0.1",
     "ts-jest": "^29.2.3",
-    "turbo": "2.0.9",
+    "turbo": "2.0.11",
     "typescript": "5.5.4"
   },
   "engines": {
