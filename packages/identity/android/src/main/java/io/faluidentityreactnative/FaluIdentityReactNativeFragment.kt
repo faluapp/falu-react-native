@@ -2,7 +2,6 @@ package io.faluidentityreactnative
 
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,7 +35,12 @@ class FaluIdentityReactNativeFragment : Fragment(), IdentityVerificationCallback
 
     val imageUri = requireArguments().getBundle(LOGO_URI)?.getString("uri").orEmpty()
 
-    verificationView = FaluIdentityVerificationView.create(this, Uri.parse(imageUri), this)
+    verificationView =
+      FaluIdentityVerificationView.create(
+        fragment = this,
+        logo = Uri.parse(imageUri),
+        callback = this
+      )
     verificationView.open(
       verificationId = verification,
       temporaryKey = temporaryKey
