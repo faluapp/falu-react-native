@@ -15,7 +15,7 @@
     "@react-navigation/elements": "1.3.31",
     "@react-navigation/native": "6.1.18",
     "@react-navigation/native-stack": "6.11.0",
-    "react-native-safe-area-context": "4.10.8",
+    "react-native-safe-area-context": "4.11.1",
     "react-native-screens": "3.34.0"
   },
   "devDependencies": {
@@ -23,15 +23,15 @@
     "@babel/preset-env": "7.25.8",
     "@babel/runtime": "7.25.7",
     "@falu/react-native-identity": "workspace:*",
-    "@react-native-community/cli-platform-android": "14.0.0",
-    "@react-native-community/cli-platform-ios": "14.0.0",
-    "@react-native/babel-preset": "0.74.87",
-    "@react-native/gradle-plugin": "0.74.87",
-    "@react-native/metro-config": "0.74.87",
-    "@react-native/typescript-config": "0.74.87",
+    "@react-native-community/cli-platform-android": "14.1.1",
+    "@react-native-community/cli-platform-ios": "14.1.1",
+    "@react-native/babel-preset": "0.75.4",
+    "@react-native/gradle-plugin": "0.75.4",
+    "@react-native/metro-config": "0.75.4",
+    "@react-native/typescript-config": "0.75.4",
     "babel-plugin-module-resolver": "5.0.2",
     "metro-react-native-babel-preset": "0.77.0",
     "react": "18.3.1",
-    "react-native": "0.74.5"
+    "react-native": "0.75.4"
   }
 }
