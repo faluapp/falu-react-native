@@ -42,8 +42,8 @@ importers:
         specifier: 4.1.0
         version: 4.1.0(prettier@3.3.3)(typescript@5.6.3)
       react-native-builder-bob:
-        specifier: 0.30.3
-        version: 0.30.3(typescript@5.6.3)
+        specifier: 0.32.1
+        version: 0.32.1(typescript@5.6.3)
       rimraf:
         specifier: 6.0.1
         version: 6.0.1
@@ -1965,11 +1965,6 @@ packages:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
-
-  acorn@8.13.0:
-    resolution: {integrity: sha512-8zSiw54Oxrdym50NlZ9sUusyO1Z1ZchgRLWRaK6c86XJFClyCgFKetdowBg5bKxyp/u+CDBJG4Mpp0m3HLZl9w==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
 
   acorn@8.14.0:
     resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
@@ -4159,8 +4154,8 @@ packages:
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
-  react-native-builder-bob@0.30.3:
-    resolution: {integrity: sha512-7w+oNNNkY+cR7Z3GgKaDWg7CeSxpv1ZUox42Ji/rViAxygMmtSPBe5I3K723OjGJXhvJCyUK5RRvzefNPw7Amg==}
+  react-native-builder-bob@0.32.1:
+    resolution: {integrity: sha512-F4LsDRXoFtX3O3CzhFV/SXMWFrOdW/nw/QPjCPrMevEXBkKHxQ9w18LmvbZZlvSHy+pdPZP9tmKz8nPoX1LOUA==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
@@ -7451,7 +7446,10 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - '@babel/preset-env'
+      - bufferutil
+      - encoding
       - supports-color
+      - utf-8-validate
 
   '@react-native/normalize-colors@0.73.2': {}
 
@@ -7799,8 +7797,6 @@ snapshots:
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:
       acorn: 8.14.0
-
-  acorn@8.13.0: {}
 
   acorn@8.14.0: {}
 
@@ -10464,7 +10460,7 @@ snapshots:
 
   react-is@18.3.1: {}
 
-  react-native-builder-bob@0.30.3(typescript@5.6.3):
+  react-native-builder-bob@0.32.1(typescript@5.6.3):
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-transform-strict-mode': 7.24.7(@babel/core@7.26.0)
@@ -11060,7 +11056,7 @@ snapshots:
   terser@5.31.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.13.0
+      acorn: 8.14.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
