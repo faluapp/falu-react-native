@@ -3,9 +3,9 @@ updates:
   - package-ecosystem: 'npm' # See documentation for possible values
     directory: '/' # Location of package manifests
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
       time: '02:00'
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 20
     groups:
       babel:
         patterns:
@@ -42,27 +42,25 @@ updates:
           - 'vitest-react-native'
     reviewers:
       - mburumaxwell
-      - sethonyango
   - package-ecosystem: 'github-actions'
     directory: /
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
       time: '02:00'
     open-pull-requests-limit: 10
     reviewers:
       - mburumaxwell
-      - sethonyango
 
   - package-ecosystem: 'gradle'
     directories:
       - '/examples/identity/android'
       - '/packages/identity/android'
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
       time: '02:00'
     open-pull-requests-limit: 10
     reviewers:
-      - sethonyango
+      - mburumaxwell
     groups:
       react-native:
         patterns:
@@ -72,8 +70,8 @@ updates:
       - '/examples/identity/ios'
       - '/packages/identity/ios'
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
       time: '02:00'
     open-pull-requests-limit: 10
     reviewers:
-      - sethonyango
+      - mburumaxwell
